@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>각종 계산기</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+  <script src="./calc.js"></script>
+</head>
+<body>
+  <div id="wrap">
+    <div class="loan">
+      <div>
+        <p>대출이자계산기 (원리금균등상환)</p>
+        <form class="ui form">
+          <div class="field">
+            <label>대출금액</label>
+            <input class="loan_price" type="number" />
+          </div>
+          <div class="field">
+            <label>대출이자</label>
+            <input class="loan_percentage" step="0.1" type="number" />
+          </div>
+          <div class="field">
+            <label>대출기간(년)</label>
+            <input class="loan_day" type="number" />
+          </div>
+          <div class="field">
+            <label>거치기간(년)</label>
+            <input class="stay_day" type="number" />
+          </div>
+          <button class="ui button primary" type="submit">계산</button>
+        </form>
+      </div>
+      <div class="table_area">
+        <table class="ui celled table">
+          <thead>
+            <tr></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

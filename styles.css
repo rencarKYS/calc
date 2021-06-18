@@ -1,0 +1,19 @@
+.loan {
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.loan form {
+  min-width: 300px;
+}
+
+.table_area table th,
+.table_area table td {
+  text-align: center !important;
+}
+
+.table_area {
+  margin-left: 50px;
+  width: 100%;
+}
